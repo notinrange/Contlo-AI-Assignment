@@ -5,6 +5,7 @@
 
 First I started with Exploring Transformers by YouTube Video after that I learn about BERT Architecture referrring this github link mentioned in Refrences Section and implementing class of activation function GELU
 
+![transformer-decoder-block-self-attention-2](https://github.com/notinrange/Contlo-AI-Assignment/assets/88238469/68fefd39-662c-4e5d-9737-c9fde7f25d5f)
 
 ```bash
 class CustomGELU(nn.Module):
@@ -144,6 +145,7 @@ I applied some changes in self attention layer with different approaches to enha
 
 This Embedding technique is inbuild in Pytorch can be installed and access using following commands
 
+<img width="352" alt="Screenshot 2023-12-17 at 1 37 23 PM" src="https://github.com/notinrange/Contlo-AI-Assignment/assets/88238469/805e6096-9245-4c61-9f8c-6e3bf5c76e87">
 
 ```bash
 $ pip install rotary-embedding-torch
@@ -164,6 +166,7 @@ self.attention = nn.MultiheadAttention(
 
 ### Group Query Attention
 This Embedding technique implemented in following code with reference of following Architecture:
+<img width="559" alt="Screenshot 2023-12-17 at 1 38 16 PM" src="https://github.com/notinrange/Contlo-AI-Assignment/assets/88238469/0f43b324-4a11-4445-bc0c-cb7845f23a8b">
 
 ```bash
 class GroupedQueryAttention(nn.Module):
@@ -201,6 +204,7 @@ self.attention = GroupedQueryAttention(
 
 ### Sliding Window Attention
 This Embedding technique implemented in following code with reference of following Architecture:
+<img width="591" alt="Screenshot 2023-12-17 at 1 38 43 PM" src="https://github.com/notinrange/Contlo-AI-Assignment/assets/88238469/2b41bbf6-d747-4c1e-94ad-b363144c238e">
 
 ```bash
 class SlidingWindowAttention(nn.Module):
